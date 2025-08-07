@@ -10,10 +10,10 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "not-working-with-both-fields-integer-and-id-alphabetically-second")
+@Table(name = "not-working-id-with-generation-type-identity")
 @AllArgsConstructor
 @NoArgsConstructor
-public class NotWorkingWithBothFieldsIntegerAndIdAlphabeticallySecondEntity {
+public class NotWorkingIdWithGenerationTypeIDENTITYEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")

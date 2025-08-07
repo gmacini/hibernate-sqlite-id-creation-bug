@@ -6,10 +6,6 @@ This will create a file in the root directory named hibernate-bug-test.db.
 
 You can analyze the generated database and observe the following:
 
-1) Table WorkingWithBothFieldsIntegerAndIdAlphabeticallyFirstEntity: the field 'id' is created correctly.
+1) Table working-id-with-generation-type-auto: the field 'id' is created correctly with Data Type INTEGER.
 
-2) Table WorkingOnlyIdAsIntegerAndIdAlphabeticallySecondEntity: the field 'id' is created correctly.
-
-3) Table NotWorkingWithIdNotIntegerAndAnotherColumnAsIntegerAndIdAlphabeticallyFirstEntity: the field 'id' is created with the incorrect type ANY because 'zanotherColumn' is an Integer and 'id' is a Long.
-
-4) Table NotWorkingWithBothFieldsIntegerAndIdAlphabeticallySecondEntity: the field 'id' is created with the incorrect type ANY because it is alphabetically after 'anotherColumn'.
+2) Table not-working-id-with-generation-type-identity: he field 'id' is created with the incorrect type ANY because the generation type is set to IDENTITY.

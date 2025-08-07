@@ -10,10 +10,8 @@ public class HibernateUtil {
         try {
             sessionFactory = new Configuration()
                     .configure("hibernate.cfg.xml")
-                    .addAnnotatedClass(NotWorkingWithBothFieldsIntegerAndIdAlphabeticallySecondEntity.class)
-                    .addAnnotatedClass(NotWorkingWithIdNotIntegerAndAnotherColumnAsIntegerAndIdAlphabeticallyFirstEntity.class)
-                    .addAnnotatedClass(WorkingOnlyIdAsIntegerAndIdAlphabeticallySecondEntity.class)
-                    .addAnnotatedClass(WorkingWithBothFieldsIntegerAndIdAlphabeticallyFirstEntity.class)
+                    .addAnnotatedClass(NotWorkingIdWithGenerationTypeIDENTITYEntity.class)
+                    .addAnnotatedClass(WorkingIdWithGenerationTypeAUTOEntity.class)
                     .buildSessionFactory();
         } catch (Throwable ex) {
             System.err.println("Initial SessionFactory creation failed." + ex);

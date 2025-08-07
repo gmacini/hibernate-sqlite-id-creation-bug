@@ -10,14 +10,14 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "working-with-both-fields-integer-and-id-alphabetically-first")
+@Table(name = "working-id-with-generation-type-auto")
 @AllArgsConstructor
 @NoArgsConstructor
-public class WorkingWithBothFieldsIntegerAndIdAlphabeticallyFirstEntity {
+public class WorkingIdWithGenerationTypeAUTOEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Integer id;
-    @Column(name = "zanotherColumn")
-    private Integer zanotherColumn;
+    @Column(name = "anotherColumn")
+    private Integer anotherColumn;
 }
