@@ -10,6 +10,6 @@ You can analyze the generated database and observe the following:
 
 2) Table WorkingOnlyIdAsIntegerAndIdAlphabeticallySecondEntity: the field 'id' is created correctly.
 
-3) Table NotWorkingWithIdNotIntegerAndAnotherColumnAsIntegerAndIdAlphabeticallyFirstEntity: the field 'id' is not created correctly because 'zanotherColumn' is an Integer and 'id' is a Long.
+3) Table NotWorkingWithIdNotIntegerAndAnotherColumnAsIntegerAndIdAlphabeticallyFirstEntity: the field 'id' is created with the incorrect type ANY because 'zanotherColumn' is an Integer and 'id' is a Long.
 
-4) Table NotWorkingWithBothFieldsIntegerAndIdAlphabeticallySecondEntity: the field 'id' is not created correctly because it is alphabetically after 'anotherColumn'.
+4) Table NotWorkingWithBothFieldsIntegerAndIdAlphabeticallySecondEntity: the field 'id' is created with the incorrect type ANY because it is alphabetically after 'anotherColumn'.
