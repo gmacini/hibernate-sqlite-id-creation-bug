@@ -8,4 +8,4 @@ You can analyze the generated database and observe the following:
 
 1) Table working-id-with-generation-type-auto: the field 'id' is created correctly with Data Type INTEGER.
 
-2) Table not-working-id-with-generation-type-identity: he field 'id' is created with the incorrect type ANY because the generation type is set to IDENTITY.
+2) Table not-working-id-with-generation-type-identity: the field 'id' is created with the incorrect type ANY because the generation type is set to IDENTITY.
